@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./index.css" />
+    <title>Accessibility Example</title>
+  </head>
+  <body>
+    <div class="signup-container">
+      <nav>
+        <a>Super People</a>
+        <a>Log In</a>
+      </nav>
+      <div id="stepper" class="stepper">
+        <button class="step completed">Secret Identity</button>
+        <button class="step active">Super Powers</button>
+        <button class="step">Alignment</button>
+      </div>
+      <main>
+        <h1>Select your super powers!</h1>
+        <div class="power-card-container">
+          <div tabindex="0" class="power-card" clickable>
+            <img
+              class="power-card-image"
+              src="https://source.unsplash.com/featured/?flying"
+              alt="Power of Flight"
+            />
+            <h3 class="power-card-name">Flight</h3>
+            <p class="power-card-category">Neutral</p>
+          </div>
+          <div tabindex="0" class="power-card" clickable>
+            <img
+              class="power-card-image"
+              src="https://source.unsplash.com/featured/?powerlifter"
+              alt="Power of Super Strength"
+            />
+            <h3 class="power-card-name">Super Strength</h3>
+            <p class="power-card-category">Good</p>
+          </div>
+          <div tabindex="0" class="power-card" clickable>
+            <img
+              class="power-card-image"
+              src="https://source.unsplash.com/featured/?fireworks"
+              alt="Power of Fire"
+            />
+            <h3 class="power-card-name">Fire</h3>
+            <p class="power-card-category">Evil</p>
+          </div>
+          <div tabindex="0" class="power-card" clickable>
+            <img
+              class="power-card-image"
+              src="https://source.unsplash.com/featured/?cheetah"
+              alt="Power of Super Speed"
+            />
+            <h3 class="power-card-name">Super Speed</h3>
+            <p class="power-card-category">Good</p>
+          </div>
+          <div tabindex="0" class="power-card" clickable>
+            <img
+              class="power-card-image"
+              src="https://source.unsplash.com/featured/?teleport"
+              alt="Power of Teleportation"
+            />
+            <h3 class="power-card-name">Teleportation</h3>
+            <p class="power-card-category">Neutral</p>
+          </div>
+          <div tabindex="0" class="power-card" clickable>
+            <img
+              class="power-card-image"
+              src="https://source.unsplash.com/featured/?invisible"
+              alt="Power of Invisibility"
+            />
+            <h3 class="power-card-name">Invisibility</h3>
+            <p class="power-card-category">Evil</p>
+          </div>
+        </div>
+      </main>
+      <div id="actions" class="actions">
+        <button>Next</button>
+      </div>
+    </div>
+  </body>
+</html>

@@ -1,0 +1,87 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  background: #f0f0f0;
+  margin: 0;
+}
+
+button {
+  border-block: none;
+  border-inline: none;
+}
+
+.signup-container {
+  display: grid;
+  width: auto;
+  margin: 0;
+  grid-template-columns: 1fr 0.75fr 4fr 1fr;
+  grid-template-rows: 4em 1fr 5em;
+  grid-template-areas: "nav nav nav nav" ". stepper main ." ". stepper actions .";
+}
+
+nav {
+  grid-area: nav;
+  background: #fff;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+#stepper {
+  grid-area: stepper;
+  display: flex;
+  flex-direction: column;
+  padding-top: 2em;
+}
+#stepper .step {
+  background: transparent;
+  margin: 3em 5em;
+}
+
+main {
+  grid-area: main;
+  padding: 2em;
+}
+
+.power-card-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1.5em;
+}
+.power-card-container .power-card {
+  background: #fff;
+  width: 14em;
+  padding: 1.5em;
+  box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.1);
+  border-radius: 5px;
+  text-align: center;
+}
+.power-card-container .power-card :hover {
+  box-shadow: 0 10px 20px 0 rgba(0, 0, 0, 0.1);
+}
+.power-card-container .power-card .power-card-image {
+  width: 8em;
+  height: 8em;
+  border-radius: 50%;
+}
+.power-card-container .power-card .power-card-category {
+  margin-bottom: 0;
+}
+
+.actions {
+  grid-area: actions;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.actions button {
+  display: block;
+  height: 5em;
+  width: 75%;
+  background: #252525;
+  color: #fff;
+}
+
+/*# sourceMappingURL=index.css.map */
